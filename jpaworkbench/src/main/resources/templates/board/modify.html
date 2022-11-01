@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html xmlns="http://www.thymeleaf.org">
+
+<head>
+	<title>Board</title>
+</head>
+<script>
+	$(document).ready(function () {
+		var formObj = $("#board");
+
+		$("#btnModify").on("click", function () {
+			formObj.attr("action", "/board/modify");
+			formObj.attr("mothod", "post");
+			formObj.submit();
+		});
+
+		$("#btnList").on("click", function () {
+			self.location = "/board/list";
+		});
+	});
+</script>
+
+</html>
+<h2>MODIFY</h2>
+
+<form id="board" action="success.html" th:action="@{modify}" th:object="${board}" method="post">
+	<input type="hidden" name="boardNo" th:field="*{boardNo}" />
+	<table>
+		<tr>
+			<td>Title</td>
+			<td><input type="text" name="title" th:field="*{title}" /></td>
+		</tr>
+		<tr>
+			<td>Writer</td>
+			<td><input type="text" name="writer" th:field="*{writwe}" /></td>
+		</tr>
+		<tr>
+			<td>Content</td>
+			<td><input type="content" name="content" th:field="*{content}" /></td>
+		</tr>
+	</table>
+
+
+
+</form>
+
+</form>
+
+<body>
+
+
+
+
+
+
+</body>
