@@ -1,0 +1,133 @@
+@charset "UTF-8";
+.container{width: 100%;height: 100%;}
+.skrollr{position: relative;}
+.text{
+    position: fixed;
+    /* left: 20px;top: 20px; */
+    color: #ddd;
+    font-size: 50px;
+    z-index: 1000;
+}
+.fixed_bg{
+    position: fixed;
+    left: 0;top: 0;
+    width: 100%;height: 100%;
+    
+}
+.fixed_bg_bottom{
+    position: fixed;
+    left: 0;top: 0;
+    width: 100%;height: 100%;
+}
+.slide{
+    position: fixed;
+    left: 0;top: 0;
+    width: 100%;height: 100%;
+    color: #fff;
+    /* padding: 50px; */
+}
+.slider-content{
+    width: 60%;
+    margin: 0 auto;
+}
+
+
+.fixed_bg{}
+/* slide1 */
+
+.box_wrap{
+width: 800px;
+height: 1200px;
+/* background-color: #fff; */
+/* background:url(img/작업메뉴.png) no-repeat center ; */
+
+border-radius: 10px;
+}
+.box{
+    width: 3000px;
+    /* transform-origin: left; */
+}
+.fixed_bg_bottom{
+z-index: 100;
+}
+.wrap{
+    position: relative;
+    width: 60%;
+    height: 1000px;
+overflow: hidden;}
+
+.slide3{
+    /* transform: translate(); */
+    border-radius: 20px;
+
+}
+.slide4{}
+span{
+    display: block;
+    color: #000;
+    top: 35%;
+    left: 20%;
+    font-size: 100px;
+    position: absolute;
+    z-index: 10;
+}
+.box_wrap{
+    position: relative;
+    width: 50%;
+    height: 50%;
+    margin: 0 auto;
+}
+.w_box{
+    width: 1200px;
+    height: 800px;
+    background-color: #fff;
+    margin-top: 36%;
+transform: translateX(100%);
+}
+.w_top{
+position: absolute;
+
+
+}
+.top_wrap{
+    width: 2209px;
+    height: 500px;
+    position: relative;
+    background-color: #f0f0f0;
+    top: -100%;
+    /* overflow: hidden; */
+}
+.span{
+    position: relative;
+}
+.main_txt::before{
+    content: "";
+    position: absolute;
+    background-color: #ccc;
+    width: 30px;height: 120px;
+    right: 0;top: 5px;
+}
+.main_txt.changed::before{
+    content: "";
+    position: absolute;
+    background-color: #ccc;
+    width: 0;height: 0;
+    right: 0;top: 5px;
+}
+
+
+
+.main_txt2::before{
+    content: "";
+    position: absolute;
+    background-color: #ccc;
+    width: 30px;height: 120px;
+    right: 0;top: 5px;
+}
+.main_txt2.changed::before{
+    content: "";
+    position: absolute;
+    background-color: #ccc;
+    width: 0;height: 0;
+    right: 0;top: 5px;
+}
