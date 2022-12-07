@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>나ㅏ주겅</title>
+    <style>
+        *{margin: 0;padding: 0;}
+        .약을든남자::before{
+            content: "";
+            clear: both;
+            display: block;
+        }
+        .약을든남자::after{
+            content: "";
+            clear: both;
+            display: block;
+        }
+        .만일{background-color: #FBF8F1;
+            /* margin 위아래는 30px, 양옆으로 auto(가운데정렬) */
+            margin: 30px auto; padding:20px;
+            width: 900px;
+            text-align: center;
+        }
+        .만일>div{width:32%; margin-right:2%; float: left; padding: 20px 0;}
+        .만일 .만일첫째{background-color: #001D6E;}
+        .만일 .만일둘째{background-color: #7FB5FF;}
+        .만일 .만일세째{background-color: #C4DDFF;
+        margin-right: 0;}
+
+        .만이{background-color: #FBF8F1;
+            /* margin의 상하는 큰 값이 적용된다. */
+            margin: 30px auto; padding:20px;
+            width: 900px;
+            text-align: center;
+        }
+        .만이>div{width:23.5%; float: left; padding: 20px 0;
+            margin-right: 2%;}
+        .만이 .만이첫째{background-color: #68A7AD;}
+        .만이 .만이둘째{background-color: #99C4C8;}
+        .만이 .만이세째{background-color: #E5CB9F;}
+        .만이 .만이네째{background-color: #EEE4AB;
+            margin-right: 0;}
+
+        .만삼{background-color: #FBF8F1;
+        margin: 30px auto; padding: 20px;
+        text-align: center; width: 900px;}
+        .만삼>div{width: 49%; margin-right: 2%; float: left; padding: 20px 0;}
+            .만삼 .만삼첫째{background-color: #BB6464;}
+            .만삼 .만삼첫째:hover{background-color: #FF9F45;
+            transition: 2s;}
+            /* 마우스 올리면 커지게, 이미지로 대체 */
+            .만삼 .만삼둘째{
+            margin-right: 0;
+            background-image:url(img.jpg);
+            background-repeat: no-repeat;
+            background-size: 100%;
+            background-position: center;
+            transition: 1s;}
+            .만삼 .만삼둘째:hover{
+                background-image:url(img2.jpg);
+                background-size: 140%;
+            }
+            
+        
+        .만사{background-color: #FBF8F1;
+        margin: 30px auto; padding: 20px; text-align: center; width: 900px;}
+        .만사>div{width: 18.4%; float: left; margin-right: 2%; padding: 20px 0;}
+        .만사>div:hover{border-radius: 50px; transition: 0.3s;}
+        .만사 .만사첫째{background-color: #F76E11;}
+        .만사 .만사둘째{background-color: #FF9F45;}
+        .만사 .만사세째{background-color: #E5CB9F;}
+        .만사 .만사네째{background-color: #FFBC80;}
+        .만사 .만사다섯째{background-color: #ECC488;
+            margin-right: 0;}
+    
+    </style>
+</head>
+
+<body>
+    <div class="만일 약을든남자">
+        <div class="만일첫째">만일첫째</div>
+        <div class="만일둘째">만일둘째</div>
+        <div class="만일세째">만일세째</div>
+
+    </div>
+    <div class="만이 약을든남자">
+        <div class="만이첫째">만이첫째</div>
+        <div class="만이둘째">만이둘째</div>
+        <div class="만이세째">만이세째</div>
+        <div class="만이네째">만이네째</div>
+    </div>
+    <div class="만삼 약을든남자">
+        <div class="만삼첫째">만삼첫째</div>
+        <div class="만삼둘째">만삼둘째</div>
+    </div>
+    <div class="만사 약을든남자">
+        <div class="만사첫째">만사첫째</div>
+        <div class="만사둘째">만사둘째</div>
+        <div class="만사세째">만사세째</div>
+        <div class="만사네째">만사네째</div>
+        <div class="만사다섯째">만사다섯째</div>
+    </div>
+</body>
+
+</html>

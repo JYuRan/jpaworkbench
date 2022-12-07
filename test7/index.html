@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        *{margin: 0; padding:0;}
+        .본체{background-color: #00FFAB;
+        width: 300px;
+        /* 글자는 인라인 요소이다.
+        나의 자손 중에 인라인 요소가 있거든 가운데 맞추겠다 */
+        text-align: center;
+        /* 블럭요소를 가운데 맞추겠다 */
+        margin: auto;
+        /* 두개의 차이는 표 안의 글자와 표(블럭) 자신의 차이 */
+    }
+    .본체::before{content: "비포";
+    background-color: #B7E5DD;
+    display: block;}
+    .본체::after{content: "애프터";
+    background-color: #B8F1B0;
+    display: block;}
+    .본체2 span{
+        background-color: #E3FCBF;
+        font-weight: bolder;
+        /*        width: 200px; 
+        인라인 요소는 넓이(width)의 개념이 없음.
+        글자의 크기만큼만 공간을 차지 
+        게자다 padding, margin의 상하값이 적용이 안됨*/
+
+        padding: 30px;
+        margin: 20px;
+        font-size: 20px;
+        color: #14C38E;
+    }
+        
+    </style>
+</head>
+<body>
+    <div class="본체">본체</div>
+    <div class="본체2">본체<span>2</span></div>
+</body>
+</html>

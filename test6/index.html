@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>정렬</title>
+    <style>
+
+        *{margin:0; padding: 0;}
+        .아빠 {background-color:#76BA99;
+        width: 900px;}
+        /* after은 공간을 만들 수 있음, content 있어야 함,  */
+        .치매약::after{content: "";display:block;
+        clear: both;}
+        .아빠 .첫째자식{
+            float: right;
+            width: 300px;
+            background-color: #ADCF9F;
+        }
+        .아빠 .둘쨰자식{
+            float: left;
+            width: 300px;
+            background-color: #CED89E;
+        }
+        /* 인라인 요소: 글자와 같은 성질 */
+        .아빠 .둘쨰자식 span{
+            font-weight: bolder;
+            color:rgb(240, 154, 120)
+            
+        }
+        .아빠 .셋째자식{
+            float: left;
+            width: 300px;
+            background-color: #FFDCAE;
+        
+        }
+        .아빠 .치매약{
+            clear: both;
+        }
+        .작은아빠{background-color: green;}
+    </style>
+</head>
+<body>
+    <div class="아빠">
+
+        <div class="첫째자식">첫째자식</div>
+        <!-- 인라인 요소 안에 블록 요소 들어갈 수 없음
+        블록요소 안에는 블록요소 들어감, 인라인요소 -->
+        <div class="둘쨰자식"><span>둘쨰</span>자식</div>
+        <div class="셋째자식">셋째자식</div>
+        <div class="치매약"></div>
+        <div class="작은아빠">작은아빠</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>제목임</title>
+    <style>
+        /* *은 모든요소(태그) 괄호 안에서 m0탭, t0탭 */
+        *{margin: 0; top: 0;}
+        .영자{
+            color:rgb(8, 8, 41);
+            background-image:url(img.jpg);
+            width: 300px;   /* 넓이 */
+            text-align: center;
+            /* 위, 좌우, 아래 시계방향 */
+            padding: 20px 20px 20px 10px;
+            margin: auto;
+            padding: 20px;
+            letter-spacing: 60px;
+            border: 5px solid red;
+            box-sizing: border-box;
+            background-repeat:no-repeat;
+            /* cover(배경 덮는다)/ contain(이미지사 온전히 나옴)
+            cover은 일순위가 넓이에 맞춤,
+            높이가 부족하면, 비율을 유지하면서 넓이가 늘어나서 높이를 커버합니다. */
+            background-size: 100%;
+            background-position: center;
+            transition: 0.5s;
+
+
+        }
+        .영자:hover{    /* 마우스를 올리면 */
+            background-size: 120%;
+
+        }
+    
+     
+    </style>
+</head>
+<body>
+    <!-- .영어 Tab ->클래스 생선 -->
+    <div class="영자">
+        글자
+        
+
+    </div>
+    <div class="그림">
+        <img src="img.jpg" alt="11" width="500" height="300">
+    </div>
+</body>
+</html>

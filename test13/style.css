@@ -1,0 +1,112 @@
+@charset "UTF-8";
+*{margin: 0; padding: 0;
+}
+body{background-color: #d3eefe;}
+.피자 {
+    height: 150vh;
+    
+}
+.피자 h2{font-size: 70px;
+color: #43515c; text-align: center;
+padding-top: 30px;}
+.피자 .이미지전체{
+    position:relative;
+}
+/* >img 딱 자손만 찾음 */
+.피자 .이미지전체>img{position:absolute;
+top: 0; left:50%;
+transform: translateX(-50%);
+}
+.피자 .이미지전체 .재료{
+    position: absolute;
+    width: 400px; height: 530px;
+    top:424px; left:50%;
+    /* 50% -(빼기) 200px 계산 못하기 때문에 앞에 계산기calc 주고 괄호로 묶기 
+    50% -200px(- 200px와 -200px은 다름)*/
+
+    transform: translateX(calc(-50% - 200px));
+    /* background-color: #ccc; 
+    위치 잡을 때 색 정해서 잡으면 편함*/
+}
+.피자 .이미지전체 .재료 img{
+    position: absolute;
+    left: 0; top:0;
+    transition: 0.5s cubic-bezier(0.37, -0.62, 0.24, 1.99);
+    opacity: 0;
+}
+.피자 .이미지전체 .재료:hover img{
+
+    opacity: 1;
+}
+.피자 .이미지전체 .재료 img.양파{
+    left: 1500px;
+    top: -1512px;
+}
+.피자 .이미지전체 .재료:hover img.양파{
+    left: 187px; top:41px;
+}
+.피자 .이미지전체 .재료 img.허브{
+    left: 208px;
+    top: -800px;
+}
+.피자 .이미지전체 .재료:hover img.허브{
+    left: 108px;
+    top: -10px;
+}
+
+.피자 .이미지전체 .재료 img.밀가루{
+    left: -500px;
+    top: 1710px;
+}
+.피자 .이미지전체 .재료:hover img.밀가루{
+    left: 22px;
+    top: 71px;
+}
+.피자 .이미지전체 .재료 img.후추{
+    left: -1202px;
+    top: 355px;
+}
+.피자 .이미지전체 .재료:hover img.후추{
+    left: 122px;
+    top: 195px;
+}
+.피자 .이미지전체 .재료 img.마늘{
+    left: -429px;
+    top: 1123px;
+}
+.피자 .이미지전체 .재료:hover img.마늘{
+    left: 149px;
+    top: 223px;
+}
+.피자 .이미지전체 .재료 img.고추{
+    left: 129px;
+    top: -920px;
+}
+.피자 .이미지전체 .재료:hover img.고추{
+    left: 29px;
+    top: 350px;
+}
+.피자 .이미지전체 .재료 img.피망{
+    left: -1133px;
+    top: 1208px;
+}
+.피자 .이미지전체 .재료:hover img.피망{
+    left: -133px;
+    top: 128px;
+}
+.피자 .이미지전체 .재료 img.토마토{
+    left: -803px;
+    top: -2360px;
+}
+.피자 .이미지전체 .재료:hover img.토마토{
+    left: 3px;
+    top: 236px;
+}
+.피자 .이미지전체 .재료 img.치즈{
+    left: -1009px;
+    top: -1319px;
+}
+.피자 .이미지전체 .재료:hover img.치즈{
+    left: 109px;
+    top: 319px;
+}

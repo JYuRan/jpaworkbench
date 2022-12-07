@@ -1,0 +1,215 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.clear::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.부모1 {
+    background-color: #FEFFDE;
+    width: 1000px;
+    margin: 30px auto;
+    padding: 20px;
+    text-align: center;
+    color: white;
+
+}
+
+.부모1 .자식1 {
+    position: relative;
+    background-color: #DDFFBC;
+    width: 32%;
+    float: left;
+    padding: 40px 0;
+    margin-right: 2%;
+    background-image: url(https://i.pinimg.com/originals/0f/bd/8e/0fbd8e0965a991e2855deda8b251c15a.jpg);
+    background-size: 107px;
+    overflow: hidden;
+    height: 21px;
+}
+
+.부모1 .자식1 .나쁜자식 {
+
+    /* width: 30px;
+    height: 30px; 
+    width 두번 쓰면 아래에 있는게 더 우선순위*/
+    background-image: url(https://i.pinimg.com/474x/08/3b/e0/083be0ac1ed28c1e47d18713b54ccfca.jpg);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+
+    right: 0%;
+    bottom: 0%;
+    transition: 0.3s;
+    opacity: 1;
+    transform: scaleX(0);
+    /*X축(가로)만 늘림 선에 적용해서
+    마우스 갖다대면 늘어나는 선 구현 가능*/
+
+}
+
+.부모1 .자식1:hover .나쁜자식 {
+    transform: scaleX(1);
+    /*100%*/
+
+}
+
+
+
+
+.부모1 .자식2 {
+    /* 주위에 아무 영향도 주지 않고 그저 기준점이 되겠다 */
+    position: relative;
+    background-color: #91C788;
+    width: 32%;
+    float: left;
+    padding: 40px 0;
+    margin-right: 2%;
+    height: 21px;
+    background-image: url(https://i.pinimg.com/550x/d4/88/a3/d488a3d206cd390b381c5c4d8a4dc0b0.jpg);
+    background-size: 107px;
+}
+
+.부모1 .자식2 .나쁜자식 {
+    /* width: 30px;
+    height: 30px; 
+    width 두번 쓰면 아래에 있는게 더 우선순위*/
+    background-image: url(https://eportfolios.macaulay.cuny.edu/steamfest2020/files/2020/11/7d012e783430b348338df577016ff260-dimitri-slytherin.jpg);
+    background-size: 107px;
+    background-color: rgb(148, 221, 181);
+    position: absolute;
+    left: 0;
+    top: 0;
+    /* width: 100%; height: 100%; */
+    right: 0;
+    bottom: 0;
+    /* opacity: 투명도 1-100% 0-안보임*/
+    opacity: 0;
+    transition: 0.3s
+}
+
+.부모1 .자식2:hover .나쁜자식 {
+    opacity: 1;
+}
+
+.부모1 .자식3 {
+
+    position: relative;
+    background-color: #52734D;
+    width: 32%;
+    float: left;
+    padding: 40px 0;
+    background-image: url(https://i.pinimg.com/236x/39/02/e3/3902e3f4dc7653a5795b21c6a3137bad.jpg);
+    background-size: 107px;
+    height: 21px;
+    overflow: hidden;
+}
+
+.부모1 .자식3 .나쁜자식2 {
+
+    /* width: 30px;
+    height: 30px; 
+    width 두번 쓰면 아래에 있는게 더 우선순위*/
+    background-image: url(https://i.pinimg.com/474x/08/3b/e0/083be0ac1ed28c1e47d18713b54ccfca.jpg);
+
+    width: 100%;
+    height: 100%;
+
+    /* 부모의 정중앙에 위치시키기 */
+    position: absolute;
+    /* 왼쪽면과 위쪽이 부모로부터 50% 
+    몸의 중앙이 중심에 오려면 몸의 반만큼 앞으로 땡기고 위로 땡겨야 함*/
+    right: -50%;
+    bottom: -150%;
+    /* transform: translate(x값, -y값); 
+    %는 자신의 넓이의 50%만큼 후진*/
+    transform: translate(-50%, -50%);
+    transition: 0.5s;
+
+}
+
+.부모1 .자식3:hover .나쁜자식2 {
+    bottom: -50%;
+
+}
+
+.부모2{background-color: #fff;
+    background-color: #FEFFDE;
+    width: 1000px;
+    margin: 30px auto;
+    padding: 20px;
+    text-align: center;
+    color: white;}
+
+.부모2 .강아지1{background-color: #FFEEBB;
+    position: relative;
+    background-color: #DDFFBC;
+    width: 49%;
+    float: left;
+    padding: 40px 0;
+    margin-right: 2%;
+    background-image: url(https://wallpaperboat.com/wp-content/uploads/2020/04/green-aesthetic-wallpaper-for-pc.jpg);
+    background-size: cover;
+    overflow: hidden;
+    height: 21px;}
+.부모2 .강아지1 .나쁜자식{
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwx6O0DC8EUYkEQ8UECc6LcBVMdapYmmrnU2cNPtnEqarRfAA50baq8dOE90ow0SlZn20&usqp=CAU);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+
+    right: 0%;
+    bottom: 0%;
+    /* transition:0.5s ease;<설정 후 f12에서 상세설정 하고
+    ease위치에 복사붙여넣기 */
+    transition: 0.5s cubic-bezier(1,-0.37, 0, 1.36);
+    opacity: 1;
+    transform: scale(0) rotate(-720deg);
+
+    /*X축(가로)만 늘림 선에 적용해서
+    마우스 갖다대면 늘어나는 선 구현 가능*/
+
+}
+
+.부모2 .강아지1:hover .나쁜자식 {
+    transform: scale(105%); rotate: 0deg;
+    /*100%*/
+    }
+
+.부모2 .강아지2{background-color: #FFDCB8;
+    position: relative;
+    background-color: #DDFFBC;
+    width: 49%;
+    float: left;
+    padding: 40px 0;
+    background-image: url(https://i.pinimg.com/736x/fd/46/1b/fd461b33c632837344750e38ed1c8aca.jpg);
+    background-size: cover;
+    overflow: hidden;
+    height: 21px;}
+    .부모2 .강아지2 .나쁜자식{
+        background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpMLonoFWpXgP0GZnMPnbaI6snoT6p_6k-lh-ZlLnB-EQnFHXsVdJeshCqSzBEVPHIKpM&usqp=CAU);
+
+        width: 100%;
+        height: 100%;
+        position: absolute;
+    
+        right: 0%;
+        bottom: 0%;
+        transition: 0.3s;
+        opacity: 1;
+        transform: scale(1);
+    }
+    
+    .부모2 .강아지2:hover .나쁜자식 {
+        transform: scale(0.4);
+        opacity: 0;
+    
+    }
+    
+    

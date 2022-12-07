@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>정렬</title>
+    <style>
+        /* 띄어쓰기 : 자손 의미/ >(꺽쇠)의 뜻- 자식요소
+        자식과 자손은 범주가 다름 */
+        /* ★ block요소
+        부모의 넓이를 모두 차지(display:block;) */
+        *{margin:0; padding: 0;}
+        .아빠{background-color:#76BA99;
+        width: 900;}
+        .아빠 .첫째자식{
+            float: right;
+            width: 200px;
+            background-color: #ADCF9F;
+        }
+        .아빠 .둘쨰자식{
+            float: left;
+
+            width: 200px;
+            background-color: #CED89E;
+
+        }
+        .아빠 .셋째자식{
+            float: left;
+
+            width: 200px;
+            background-color: #FFDCAE;
+
+        }
+        .아빠 .치매약{
+            clear: both;
+        }
+        .작은아빠{background-color: green;}
+    </style>
+</head>
+<body>
+    <div class="아빠">
+
+        <div class="첫째자식">첫째자식</div>
+        <div class="둘쨰자식">둘쨰자식</div>
+        <div class="셋째자식">셋째자식</div>
+        <div class="치매약"></div>
+        <div class="작은아빠">작은아빠</div>
+    </div>
+</body>
+</html>
