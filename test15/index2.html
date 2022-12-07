@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <link rel="stylesheet" href="style2.css">
+    <meta charset="UTF-8">
+    <title>Slick</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css">
+</head>
+
+<body>
+    <div class="영역">
+        <div class="Slick">
+            <div><img src="img/img1.jpg" alt=""></div>
+            <div><img src="img/img2.jpg" alt=""></div>
+            <div><img src="img/img3.jpg" alt=""></div>
+            <div><img src="img/img4.jpg" alt=""></div>
+
+        </div>
+        <div class="fontawesome">
+            <!-- <i class="fas fa-arrow-alt-circle-right"></i> -->
+        </div>
+        <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+        <script>
+            $(document).ready(function () {
+                $('.Slick').slick({                         //클래스명 적어야함
+                    // setting - name: setting - value
+                    dots:true
+                });
+            });
+        </script>
+</body>
+
+</html>

@@ -1,0 +1,93 @@
+@charset "UTF-8";
+*{margin: 0; padding: 0;}
+
+.배너{}
+.배너 .your-class{
+
+}
+.배너 .your-class .slick-slide{
+    height: 425px;
+}
+
+.배너 .your-class .yc1{
+    background-image: url(image/Kings_1920774.jpg);
+    background-size: cover;
+}
+.배너 .your-class .yc2{
+    background-image: url(image/Mat_1920774.jpg);
+    background-size: cover;
+}
+.배너 .your-class .yc3{
+    background-image: url(image/West_1920774.jpg);
+    background-size: cover;
+}
+.배너 .your-class .slick-arrow{  /* 버튼 */
+    /* 포지션 따로 주기(배너 바탕이랑 곂칠 수 있게)
+    기본 z인덱스는 이기에 0보다만 크면 다 가능, 보통 10단위로 씀 */
+    position:absolute;
+    z-index: 50;
+    /* Y축(세로)상 중앙으로 보냄*/
+    top: 50%;
+    transform: translateY(-50%);
+    /* 모양 없에버림 */
+    font-size: 0; line-height: 0;
+    border: none;
+    /* 새로 백그라운드 생성 */
+    width: 40px; height: 40px;
+    /* 모든 백그라운드 관련 제거 */
+    background: none;
+    transition: 0.3s;
+
+}
+.배너 .your-class .slick-prev{
+    /* 5%정도 보기좋게 띄우기 */
+    left: 5%;
+}
+.배너 .your-class .slick-prev:before{
+    content: "\f0d9";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    font-size: 30px;
+    color: #fff;
+}
+.배너 .your-class .slick-prev:hover:before{
+    color: cornflowerblue;
+}
+.배너 .your-class .slick-next{
+    right: 5%;
+
+}
+.배너 .your-class .slick-next:before{
+    content: "\f0da";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    font-size: 30px;
+    color: #fff;
+}
+.배너 .your-class .slick-next:hover:before{
+    color: cornflowerblue;
+}
+
+.your-class .slick-dots{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 10px;
+}
+.your-class .slick-dots li{
+    float: left; margin: 0 5px;
+    list-style: none;
+    width: 8px; height: 8px;
+    background-color: #dbdbdb;
+    border-radius: 50%;
+    cursor: pointer;
+}
+/* 이동시 변하는 액션, 이름 중요 li.slick-active*/
+.your-class .slick-dots li.slick-active{
+    background-color: cornflowerblue;
+}
+.your-class .slick-dots li button{
+    font-size: 0; line-height: 0;
+    background: none;
+    border: none;
+}

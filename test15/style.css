@@ -1,0 +1,117 @@
+@charset "UTF-8";
+*{margin: 0; padding: 0;}
+img{width: 100%;}
+.치매약:after{content: ""; display: block;
+clear: both;}
+.영역{
+    /* 60프로만 보이게. 중간정렬 */
+    width: 60vw; margin: 0 auto;
+}
+.영역 .slick{}
+.영역 .slick{} .slick-arrow{
+    position: absolute;
+    left: 0px; top: 50%;
+    /* next prev 같은 위치로 감. prev가 밑바닥에 깔림 */
+    font-size: 0; line-height: 0;
+    /* 점 하나로 변함  //이유 : 버튼은 태어날 때 부터 선과 라운드를 가짐, css로 모양 변경 가능*/
+    border: 0;
+    /* width: 30px; height: 30px; */
+    /* 새로 넓이 높이 30px 줬음(배경) 나중에 화살표 모양 넣고 배경 제거할 것 */
+    /* <폰트어썸 css 적용법>폰트어썸에서 쓰고싶은 아이콘 두고 개발자 모드에서... before */
+    transform: translateY(-50%);
+    background-color: rgba(FFF, 0, 0, 100);
+    background-size: 100px;
+    width: 70px; height: 100%;
+    opacity: 0.3;
+    transition: 0.3s;
+    background: none;
+    color:white;
+}
+.영역 .slick{} .slick-arrow:hover{
+opacity: 1;
+}
+/* trev불러옴 */
+.영역 .slick{} .slick-prev{
+    z-index: 100;
+    left: 5%;
+    /* z축 100 주면 앞으로 나옴 */
+
+}
+.영역 .slick{} .slick-prev:before{
+    /* before 가서 복사해오기, 클래스에 content :~~ 붙여넣기 */
+    content: "\f053";
+    /* font-family도 가져와야함 
+    아래의 Pro->Free로 변경*/
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    /* fz = 폰트사이즈 단축키 */
+    font-size: 30px;
+
+}
+.영역 .slick{} .slick-next{
+    right:5%;
+    left: auto; /* left의 값을 풀어준다 */
+}
+.영역 .slick{} .slick-next:before{
+    content: "\f054";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    font-size: 30px;
+
+}
+.영역 .slick{} .slick-dots{
+/* 내영역보다 넘치면 숨겨라, 교과서에 없는 내용 
+치매약과 함께 쓰면 부모가 깨지는 것을 막아줌
+    overflow: hidden;
+    공간 넓어서 줄여줌
+    width: 130px;
+    위아래는 0, 중간으로 오게 auto
+    margin: 0 auto;
+    
+    위에 세개 앱솔루트로 필요없어짐, 자식의 공간만 차지
+    자식이 float이 있어도 깨지지 않음*/
+    position: absolute;
+    transform: translateX(-50%);
+    bottom: 10px;
+    left: 50%;
+}
+
+.영역 .slick{} .slick-dots li{
+    float: left;
+    /* 동그라미들 제거 */
+    list-style: none;
+    width: 12px; height: 12px;
+    background-color: #dedede;
+    /* 원으로 만들기 위함 */
+    border-radius: 50%;
+    /* 커서의 모양을 포인터로 바꿔라 */
+    cursor: pointer;
+    margin: 0 5px;
+    transition: 0.3s;
+}
+.영역 .slick{} .slick-dots li button{
+    font-size: 0; line-height: 0;
+    background: none; border: 0;
+    /* 원래있던 숫자들 제거 */
+}
+/* li안에 slick-active있는 게 아니라 li 중 s-a */
+.영역 .slick{} .slick-dots li.slick-active{
+    background-color: #222;
+    width: 22px; border-radius: 8px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 폰트어썸은 글자 */
+.fontawesome i{color: red;
+font-size: 30px;}

@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css" />
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<!-- slick-guid
+    1. google font 에서 폰트 받기, '
+      - @import문 복사해서 css에 붙여넣기, 
+      - font-family 사용할 부분에 추가하기
+    - Poppins 선택, 전체 적용시키기 위해 *{}에 붙여넣음
+
+    2. font-awesome cdn 검색 후 5.9.0(무료)버전 css를 head아래쪽에 붙여넣기
+    3. slick을 사용하기 위해 code jququery 필요, jQuery 1.x 버전 바디 아래쪽다른 cdn 보다 위에 
+        넣기
+    4. slick.js 검색 후 제일 위 사이트 방문, usage 탭을 눌러 순서대로 적용
+        - Set up your HTML markup.
+            div 복사 붙여넣기 후 클래스명 변경(your content 하나가 페이지 한 장을 의미)
+        - Add slick.css in your <head>
+            slick cdn 검색해서 css를 head에 붙여넣기
+            (min이 붙은 것은 사람이 보기에 가독성은 좋지 않으나 가벼움)
+        - Add slick.js before your closing <body> tag
+            cdn 사이트에서 js를 복사해서 body 아래쪽에 추가
+            
+        - Initialize your slider in your script file or an inline script tag
+            <script></script> 사이에 아래 코드 붙여넣고, 작동할 수 있도록 오류가 나는 문구(설명문)을 지운 뒤 클래스명을 내가 설정한 클래스명과 동일하게 변경, slick으로 설정
+    5. slick class에 내용 집어넣기
+             -->
+
+<body>
+    <div id="wrap">
+        <header>
+            <h1 class="logo">
+                <img src="images/logo.png" alt="NikeLogo">
+            </h1><!-- //h1 -->
+            <div class="header_menu">
+                <ul>
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#">SERVICES</a></li>
+                    <li><a href="#">FEATURE</a></li>
+                    <li><a href="#">PORTFOLIO</a></li>
+                    <li><a href="#">BLOG</a></li>
+                    <li><a href="#">NEW LOCATION</a></li>
+                    <li><a href="#">OUR TEAM</a></li>
+                    <li><a href="#">CONTACT/FAQ</a></li>
+                </ul>
+            </div><!-- //header_menu -->
+                <div class="header_icon">
+                    <i class="fas fa-search"></i>
+                </div>
+        </header><!-- header -->
+        <section>
+            <div class="slick">
+                <div class="s1">
+                    <!-- your content1 -->
+                    <div class="left">
+                        <!-- left -->
+                        <h2>AIR <br>
+                            JORDON</h2>
+                        <img src="images/slider-1.png" alt="운동화">
+                    </div><!-- left -->
+                    <div class="right">
+                        <div class="nike_star">
+                            <!-- em태그는 인라인 요소 -->
+                            <em>Nike</em>
+                            <div class="star">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half"></i>
+                                <i class="far fa-star"></i>
+                            </div><!-- star's -->
+                            <div class="retro">
+                                Air Jordon 5 Retro
+                            </div>
+                        </div>
+                        <div class="desc">
+                            <ul>
+                                <li>
+                                   Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit, iusto.   
+                                </li>
+                                
+                                <li>
+                                    Lorem ipsum dolor sit.
+                                </li>
+                                <li>
+                                    Lorem ipsum dolor sit.
+                                </li>
+                            </ul>
+                        </div><!-- desc -->
+                        <div class="btn">
+                            <ul>
+                                <li>
+                                    <select>
+                                        <option value="size">size</option>
+                                        <option value="230">230</option>
+                                        <option value="240">240</option>
+                                        <option value="250">250</option>
+                                    </select>
+                                </li>
+                                <li><a href="">Add to Cart</a></li>
+                                <li><a href="">$190</a></li>
+                            </ul>
+                        </div>
+
+                    </div><!-- right  -->
+                </div><!-- s1 -->
+                <div class="s2">
+                    <!-- your content1 -->
+                    <div class="left">
+                        <!-- left -->
+                        <h2>AIR <br>
+                            JORDON</h2>
+                        <img src="images/slider-2.png" alt="운동화2">
+                    </div><!-- left -->
+                    <div class="right">
+                        <div class="nike_star">
+                            <!-- em태그는 인라인 요소 -->
+                            <em>Nike</em>
+                            <div class="star">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half"></i>
+                                <i class="far fa-star"></i>
+                            </div><!-- star's -->
+                            <div class="retro">
+                                Air Jordon 5 Retro
+                            </div>
+                        </div>
+                        <div class="desc">
+                            <ul>
+                                <li>
+                                   Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit, iusto.   
+                                </li>
+                                <li>
+                                    Lorem ipsum dolor sit.
+                                </li>
+                                <li>
+                                    Lorem ipsum dolor sit.
+                                </li>
+                            </ul>
+                        </div><!-- desc -->
+                        <div class="btn">
+                            <ul>
+                                <li>
+                                    <select>
+                                        <option value="size">size</option>
+                                        <option value="230">230</option>
+                                        <option value="240">240</option>
+                                        <option value="250">250</option>
+                                    </select>
+                                </li>
+                                <li><a href="">Add to Cart</a></li>
+                                <li><a href="">$190</a></li>
+                            </ul>
+                        </div>
+
+                    </div><!-- right  -->
+                </div><!-- s2 -->
+                <div class="s3">
+                    <!-- your content1 -->
+                    <div class="left">
+                        <!-- left -->
+                        <h2>AIR <br>
+                            JORDON</h2>
+                        <img src="images/slider-3.png" alt="운동화3">
+                    </div><!-- left -->
+                    <div class="right">
+                        <div class="nike_star">
+                            <!-- em태그는 인라인 요소 -->
+                            <em>Nike</em>
+                            <div class="star">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half"></i>
+                                <i class="far fa-star"></i>
+                            </div><!-- star's -->
+                            <div class="retro">
+                                Air Jordon 5 Retro
+                            </div>
+                        </div>
+                        <div class="desc">
+                            <ul>
+                                <li>
+                                   Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit, iusto.   
+                                </li>
+                                <li>
+                                    Lorem ipsum dolor sit.
+                                </li>
+                                <li>
+                                    Lorem ipsum dolor sit.
+                                </li>
+                            </ul>
+                        </div><!-- desc -->
+                        <div class="btn">
+                            <ul>
+                                <li>
+                                    <select>
+                                        <option value="size">size</option>
+                                        <option value="230">230</option>
+                                        <option value="240">240</option>
+                                        <option value="250">250</option>
+                                    </select>
+                                </li>
+                                <li><a href="">Add to Cart</a></li>
+                                <li><a href="">$190</a></li>
+                            </ul>
+                        </div>
+
+                    </div><!-- right  -->
+                </div><!-- s3 -->
+
+
+
+            </div><!-- //slick -->
+
+
+
+        </section>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $('.slick').slick({
+
+            });
+        });
+    </script>
+</body>
+
+</html>

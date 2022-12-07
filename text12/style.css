@@ -1,0 +1,14 @@
+@charset "UTF-8";
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.부모{background-color: rgb(223, 99, 99);
+width: 1000px;
+margin: 30px auto;
+padding: 20px;}
+.부모 .자식1{background-color: rgb(214, 118, 139);}
+.부모 .자식2{background-color: rgb(126, 23, 23);}
+.부모 .자식2 .나쁜자식{background: rgb(235, 156, 156);}
+.부모 .자식3{background-color: rgb(153, 0, 0);}

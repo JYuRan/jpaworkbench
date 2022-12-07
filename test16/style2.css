@@ -1,0 +1,7 @@
+@charset "UTF-8";
+*{margin: 0; padding: 0;}
+.slick-slide{height: 425px;}
+.yc1{background-image: url(image/Kings_1920774.jpg);
+background-size: cover;}
+.yc2{background-image: url(image/Mat_1920774.jpg);}
+.yc3{background-image: url(image/West_1920774.jpg);}

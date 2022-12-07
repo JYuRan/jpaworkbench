@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        table {border: 1px solid #000; border-collapse: collapse; width: 200px; height: 100px; text-align: center;}
+        th {
+            border: 1px solid #000;
+            border-bottom: 3px double #000; background-color: skyblue;}
+        td {border: 1px solid #000;}
+        tfoot{background-color: blue; color: aliceblue;}
+    </style>
+</head>
+<body>
+    <table>
+        <thead>
+        <tr>
+            <th>교과목</th><!-- table header / 제목 역할을 하는 셀을 정의-->
+            <th>점수</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>html</td>
+            <td>93</td>
+        </tr>
+        <tr>
+            <td>css</td>
+            <td>92</td>
+        </tr>
+    </tbody>
+    <tfoot>
+        <tr>
+            <td>평균</td>
+            <td>92.5</td>
+        </tr>
+    </tfoot>
+    </table>
+</body>
+</html>

@@ -1,0 +1,392 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=Noto+Sans+KR:wght@300&family=Poppins&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background-repeat: no-repeat;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+ul,
+li {
+    list-style: none;
+}
+
+
+#wrap {
+    background: url("images/bg-main.jpg") no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+header {
+    position: absolute;
+    z-index: 40;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 20px 150px 10px;
+    box-sizing: border-box;
+    align-items: baseline;
+    border-bottom: 1px solid rgba(255, 144, 144, 0.3);
+}
+
+/* display:flax : 자식들을 옆으로 정렬 */
+header .header_menu ul {
+    display: flex;
+}
+
+header .header_menu ul li {
+    margin-right: 40px;
+
+
+}
+
+header .header_menu ul li a {
+    transition: 0.3s
+}
+
+header .header_menu ul li:hover a {
+    color: rgb(255, 144, 144);
+
+}
+
+header .header_icon i {
+    font-size: 21px;
+    color: #fff;
+}
+
+section .left h2 {
+    position: absolute;
+    left: 74px;
+    top: 0;
+    color: #fff;
+    font-size: 230px;
+    letter-spacing: 30px;
+    line-height: 272px;
+    transform: translateX(-200px);
+    transition: 1.5s;
+    display: inline-block;
+    opacity: 0;
+
+}
+
+.slick .slick-active h2 {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+
+.slick {
+    padding-top: 10%;
+    box-sizing: border-box;
+}
+
+.slick .slick-slide {
+    position: relative;
+}
+
+.slick .left {
+    height: 70vh;
+}
+
+.slick .left img {
+    position: absolute;
+    width: 1000px;
+    left: 50px;
+    top: 0;
+    transform: translateX(400px);
+    transition: 1.5s;
+    display: inline-block;
+    opacity: 1;
+
+
+}
+
+.slick .slick-active img {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+
+
+
+.slick .right {
+    position: absolute;
+    right: 10%;
+    top: 70px;
+    width: 400px;
+    height: 400px;
+
+    color: #fff;
+}
+
+.slick .right .nike_star {}
+
+
+/* 애니메이션 설정 
+설정하고 싶은 부분(em)(.slick .right .nike_star em)으로 가서
+transtorm: translate값을 준다. (오른쪽으로 200px)
+슬랙 전환 시 바뀌는 부분(sl
+*/
+.slick .right .nike_star em {
+    font-size: 80px;
+    font-weight: 700;
+    transform: translateX(200px);
+    transition: 1.5s;
+    display: inline-block;
+    opacity: 0;
+}
+
+.slick .slick-active .right .nike_star em {
+    font-size: 80px;
+    font-weight: 700;
+    transform: translateX(0);
+    opacity: 1;
+}
+
+
+
+.slick .right .nike_star .star {
+    display: inline;
+    transform: translateX(200px);
+    transition: 1.5s 0.5s;
+    display: inline-block;
+    opacity: 0;
+
+}
+
+.slick .slick-active .right .nike_star .star {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+
+.slick .right .nike_star .star i {
+    font-size: 18px;
+    color: yellow;
+    margin-left: 10px;
+}
+
+.slick .right .nike_star .retro {
+    font-size: 30px;
+    line-height: 75px;
+    transform: translateX(200px);
+    transition: 1.5s 1s;
+    display: inline-block;
+    opacity: 0;
+
+}
+
+.slick .slick-active .right .nike_star .retro {
+    transform: translateX(0);
+    opacity: 1;
+
+
+}
+
+
+.slick .right .desc {
+    padding-top: 10px;
+}
+
+.slick .right .desc ul {}
+
+.slick .right .desc ul li {
+    padding-top: 20px;
+}
+
+.slick .right .desc ul li:nth-child(1) {
+    transform: translateX(-200px);
+    transition: 1s 0.5s;
+    display: inline-block;
+    opacity: 0;
+
+}
+
+.slick .slick-active .right .desc ul li:nth-child(1) {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+.slick .right .desc ul li:nth-child(2),
+.slick .right .desc ul li:nth-child(3) {
+    transform: translateX(-200px);
+    transition: 1s 0.8s;
+    display: inline-block;
+    opacity: 0;
+
+}
+
+.slick .slick-active .right .desc ul li:nth-child(2),
+.slick .slick-active .right .desc ul li:nth-child(3) {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+
+
+.slick .right .btn {
+    padding-top: 20px;
+}
+
+.slick .right .btn ul {
+    display: flex;
+    align-items: baseline;
+}
+
+.slick .right .btn ul li {
+    margin-right: 10px;
+
+}
+
+.slick .right .btn ul li:nth-child(1) {
+    margin-right: 10px;
+    transform: translateX(-50px);
+    transition: 1s 0.5s;
+    display: inline-block;
+    opacity: 0;
+}
+
+.slick .slick-active .right .btn ul li:nth-child(1) {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+
+
+
+.slick .right .btn select {
+    background: yellow;
+    padding: 2px 5px;
+    border: none;
+}
+
+.slick .right .btn ul li:nth-child(2) {
+    border: 1px solid #fff;
+    padding: 5px 15px;
+
+    transform: translateY(50px);
+    transition: 1s 0.5s;
+    display: inline-block;
+    opacity: 0;
+}
+
+.slick .slick-active .right .btn ul li:nth-child(2) {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.slick .slick-active .right .btn ul li:nth-child(2):hover,
+.slick .slick-active .right .btn ul li:nth-child(2):hover a {
+    border-color: yellow;
+    color: yellow;
+}
+
+
+.slick .right .btn ul li:nth-child(3) {
+    transform: translateX(50px);
+    transition: 3s 0.5s;
+    display: inline-block;
+    opacity: 0;
+    font-size: 18px;
+}
+
+.slick-active .right .btn ul li:nth-child(3) {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+/* 화살표로 변경하기
+1.previous잡은 후 버튼 두 개의 공통 클래스 찾기
+    .slick .slick-arrow{} 
+2. arrow에 position: absolute를 줘 띄운 후
+    높이 50%, transform: translateY(-50%)로 중앙에 배열
+    z-index: 40를 줘서 위로 올려 작동가능하도록 만듦
+3. 화살표 각각에 left, right 0을 줘서 양끝단에 붙힘
+   <: .slick .slick-prev{}
+    .slick .slick-next{} :>
+4. 가상의 자식인 before를 추가
+.slick .slick-prev::before
+.slick .slick-next::before
+5. fontawesome 
+    fontawesome 에서 원하는 화살표 선택
+    개발자 모드에서 잡은 후 content부분 추가,
+    i tag를 잡고 font-family부분을 추가해준다
+    font-size, color를 취향껏 선택(50px, #fff)
+    0으로 설정해둔 left, right를 취향껏 증감 (2%)
+
+6. 각 화살표의 before에 hover주기
+    .slick .slick-prev:hover:before{}
+    .slick .slick-next:hover:before{}
+    를 만든 후 
+*/
+.slick .slick-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 0;
+    background: none;
+    border: none;
+    z-index: 40;
+    padding: 50px 10px;
+    background-color: rgba(255, 144, 144, 0.0);
+    transition: 0.2s;
+}
+
+.slick .slick-arrow:hover {
+}
+
+.slick .slick-prev:hover {
+    background: linear-gradient(to left, rgba(255, 144, 144, 0.6) 20%, rgba(255, 144, 144, 0.2));
+}
+
+.slick .slick-next:hover {
+    background: linear-gradient(to right, rgba(255, 144, 144, 0.6) 20%, rgba(255, 144, 144, 0.2));
+}
+
+.slick .slick-prev {
+    left: 0%;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.slick .slick-prev::before {
+    content: "\f053";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    font-size: 50px;
+    color: #fff;
+    transition: 0.3s;
+}
+
+.slick .slick-prev:hover:before {
+    color: gray;
+}
+
+
+
+.slick .slick-next {
+    right: 0%;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+.slick .slick-next::before {
+    content: "\f054";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    font-size: 50px;
+    color: #fff;
+    transition: 0.3s;
+}
+
+.slick .slick-next:hover:before {
+    color: gray;
+}

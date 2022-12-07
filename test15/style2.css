@@ -1,0 +1,75 @@
+@charset "UTF-8";
+*{margin: 0; padding: 0;}
+img{width: 100%;}
+.영역{
+    width: 80vw; margin: 0 auto;}
+.치매약:after{content: ""; display: block;
+    clear: both;}
+.slick-arrow{
+    position: absolute;
+    left: 0px; top: 50%;
+    font-size: 0; line-height: 0;
+    border: 0;
+    transform: translateY(-50%);
+    background-size: 100px;
+    width: 70px; height: 100%;
+    opacity: 0.3;
+    transition: 0.3s;
+    color:white;
+}
+.slick-arrow:hover{opacity: 0.8;}
+
+.slick-prev{
+    z-index: 100;
+    background: linear-gradient( to right, gray, rgba(0,0,0,0 ));
+}
+.slick-prev:before{
+    content: "\f053";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    font-size: 50px;
+}
+
+.slick-next{
+    right: 0;
+    left: auto;
+    background: linear-gradient( to left, gray, rgba(0,0,0,0 ));
+}
+
+.slick-next:before{
+    content: "\f054";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    font-size: 50px;
+}
+li{
+    float: left;
+    /* list-style: ; */
+    margin-right: 5%;
+    width: 10px; height: 10px;
+    background-color: #8b8b8b;
+    /* 원으로 만들기 위함 */
+    border-radius: 50%;
+    list-style:none;
+    top: auto;
+    cursor: pointer;
+    opacity: 0.4;
+    transition: 0.3s;
+}
+.slick-dots{
+
+    width: 65px;
+  
+ 
+    position: absolute;
+    transform: translateX(-50%);
+    bottom: 10px;
+    left: 50%;
+}
+button{
+    font-size: 0; line-height: 0;
+    background: none; border: 0;} 
+.slick-active{
+opacity: 1;
+width: 22px; border-radius: 5px;
+    }

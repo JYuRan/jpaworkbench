@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+ 
+    fieldset{background-color: cornsilk; width: 400px; height: 800px;
+    font-size: 16px;}
+        p{font-weight: bold; }
+        input{background-color: ivory; padding: 5px 5px; 
+            border-style: none;
+            border: 1px solid lightgrey;
+            border-radius: 5px; }
+
+    label{float: left; width: 100px;}
+    </style>
+</head>
+<body>
+    <form action="#" method="post">
+        <fieldset>
+            <legend>type 속성</legend>      <!-- 줄로 감싸줌 -->
+            <p>아이디 : <input type="text"></p> <!-- text 글입력상자 -->
+            <p>비밀번호 : <input type="password"></p><!-- passward 비밀번호 입력상자 -->
+            <p>이메일 : <input type="email" autocomplete="on"></p><!-- @를 반드시 포함 -->
+            <p>전화번호 : <input type="tel" autocomplete="off"></p>
+            <p>예<input type="radio" name="receive" checked><!-- checked:선택된 상태로 시작 -->
+                아니오<input type="radio" name="receive"></p>
+            <p>
+                HTML <input type="checkbox">
+                CSS <input type="checkbox">
+                Mysql <input type="checkbox">
+            </p>
+            <p><input type="reset" value="취소"></p>
+            <p><input type="button" value="확인"></p>
+            <p><input type="file"></p>
+            <p>가입목적 : <br>
+            <textarea cols="30" rows="5"></textarea></p>
+            <p>전화번호
+                <select>
+                    <option>지역번호</option>
+                    <option selected>02</option>
+                    <option>031</option>
+                    <option>044</option>
+                </select>
+            </p>
+            <h3>필드에 입력형식 힌트추가</h3>
+            <p>
+                <label for="id">아이디</label>
+                <input type="text" id="id" placeholder="아이디입니다" title="아이디 입력" required><!-- reqired : 필수적으로 작성해야함 -->
+            </p>
+                <p>
+                    
+                <label for="pw">비밀번호</label>
+                <input type="passward" id="pw" placeholder="비밀번호" title="비밀번호 입력" required>
+            </p>
+            <p><input type="submit" value="전송"></p>
+            </fieldset>
+
+    </form>
+    
+</body>
+</html>

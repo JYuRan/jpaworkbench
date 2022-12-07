@@ -1,0 +1,100 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=Noto+Sans+KR:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Fjalla One', sans-serif;
+    /* font-family: 'Noto Sans KR', sans-serif */
+    ;
+}
+
+.wrap {
+    background: url(images/bg-main.jpg) no-repeat;
+    height: 100vh;
+}
+
+.slick {}
+
+/* position: relative로 s#이각각 자식들의 기준이 되도록 함 */
+.slick .slick-slide {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.slick .slick-slide .right {
+    position: absolute;
+    background-color: #ccc;
+    /* 화면이 바뀌어도 항상 화면의 오른쪽에 붙어있음 */
+    right: 10%;
+    top: 15%;
+    width: 400px;
+    height: 400px;
+    transform: translateY(-300px); transition: 0.5s 1.5s;
+    opacity: 0;
+}
+.slick .slick-slide.slick-active .right{
+transform: translateY(0);
+opacity: 1;
+}
+
+.slick .slick-slide h2 {
+    position: absolute;
+    font-size: 230px;
+    letter-spacing: 30x;
+    line-height: 270px;
+    transform: translateX(-200px);
+    opacity: 0;
+    transition: 1.5s 0.7s;
+}
+.slick .slick-slide.slick-active h2{opacity: 1;
+    transform: translateX(0);}
+
+.slick .slick-slide img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 1000px;
+    transform: translateX(200px);
+    opacity: 0;
+    transition: 1.5s;
+}
+.slick .slick-slide.slick-active img{
+   transform: translateX(0);
+   opacity: 1;
+}
+
+.slick>div img {}
+
+.slick>.right {}
+
+.slick>.left {}
+
+.slick .slick-arrow{
+    position: absolute;
+     top: 50%;
+    transform: translateY(-50%);
+    border: none; background: none;
+    font-size: 0; 
+}
+.slick .slick-prev{
+    left: 5%;
+    z-index: 20;
+}
+.slick .slick-prev::before{content: "\f053"; width: 30px;height: 30px;
+    left: 0;top: 0;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+font-size: 50px;}
+/* 폰트어썸에서 화살표 가져와서 넣기 
+위에 i태그 잡아서 font 패밀리, 웨이트 복사해오기
+Free로 변경, font-size넣으면 볼 수 있음*/
+
+.slick .slick-next{z-index: 20; right: 5%; /* transform: translateX(-100%); */
+    }
+.slick .slick-next::before{content: "\f054"; width: 30px; height: 30px;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+font-size: 50px;
+right: 0;top: 0;}

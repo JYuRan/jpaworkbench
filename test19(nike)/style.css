@@ -1,0 +1,178 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=Noto+Sans+KR:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Fjalla One', sans-serif;
+    list-style: none;
+}
+
+body {
+    background-image: url("../test18(nike)/images/bg-main.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+
+}
+
+.nav {
+    position: relative;
+    width: 100%;
+    height: 100px;
+    /* background-color: peru; */
+    z-index: 100;
+    box-sizing: border-box;
+    border-bottom: 1px solid rgba(223, 124, 124, 0.3);
+}
+
+.nav ul {
+    position: absolute;
+    width: 1000px;
+    height: 100%;
+    left: 250px;
+}
+
+.nav ul li {
+    margin: 50px 0;
+    left: 0;
+}
+
+.nav ul li a {
+    float: left;
+    margin-left: 30px;
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.logo {
+    width: 200px;
+    height: 100px;
+    /* background-color: green;
+ background-repeat: no-repeat; */
+    position: absolute;
+
+}
+
+.logo img {
+    margin: 33px 21px 22px 32px;
+}
+
+
+.banner {
+    margin-top: 50px;
+    position: relative;
+}
+
+
+/* slick */
+
+
+.slick h2 {
+    display: inline-block;
+    position: absolute;
+    font-size: 200px;
+    letter-spacing: 20px;
+    margin: 79px;
+    
+    transform: translateX(-200px);
+    opacity: 0;
+    transition: 1.5s 0.2s;
+    color: white;
+    z-index: 0;
+}
+
+.slick-active h2 {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.slick-slide {
+    position: relative;
+}
+
+.slick img {
+margin-top: 50px;
+    width: 800px;
+    height: 500px;
+    transform: translateX(200px);
+    opacity: 0.5;
+    transition: 1.5s;
+    z-index: 10;
+    margin-left: 100px;
+}
+.slick-active img{
+   transform: translateX(0);
+   opacity: 1;
+}
+.slick-arrow {
+
+    transition: 0.3s;
+    border: none;
+    left: 0;
+    background: none;
+    height: 100%;
+    font-size: 0;
+    line-height: 0;
+    position: absolute;
+    z-index: 10;
+    top: 50%;
+    background: #ccc;
+    transform: translateY(-50%);
+}
+
+
+.slick-prev {
+    left: 0%;
+    width: 40px;
+
+}
+
+.slick-prev::before {
+    content: "\f053";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    box-sizing: border-box;
+    font-size: 30px;
+    transform: translateY(-50%);
+    /* width: 50px; height: 50px; */
+}
+
+
+.slick-next {
+    top: 0;
+    width: 40px;
+    left: 100%;
+    transform: translateX(-100%);
+    /* width: 50px; height: 50px; */
+}
+
+.slick-next::before {
+    content: "\f054";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    box-sizing: border-box;
+    font-size: 30px;
+    background: #ccc;
+
+}
+
+/* slick_right */
+.slick_right {
+    width: 300px;
+    height: 300px;
+    top: 25%;
+    right: 5%;
+    position: absolute;
+    background-color: #fff;
+    z-index: 60;
+    transform: translateY(-300px);
+    transition: 0.5s 1.5s;
+    opacity: 0;
+}
+
+.slick-active .slick_right {
+    transform: translateY(0);
+    opacity: 1;
+}

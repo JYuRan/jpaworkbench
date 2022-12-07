@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css"/>
+</head>
+<!-- slick-guid
+    1. google font 에서 폰트 받기, '
+      - @import문 복사해서 css에 붙여넣기, 
+      - font-family 사용할 부분에 추가하기
+    - Poppins 선택, 전체 적용시키기 위해 *{}에 붙여넣음
+
+    2. font-awesome cdn 검색 후 5.9.0(무료)버전 css를 head아래쪽에 붙여넣기
+    3. slick을 사용하기 위해 code jququery 필요, jQuery 1.x 버전 바디 아래쪽다른 cdn 보다 위에 
+        넣기
+    4. slick.js 검색 후 제일 위 사이트 방문, usage 탭을 눌러 순서대로 적용
+        - Set up your HTML markup.
+            div 복사 붙여넣기 후 클래스명 변경(your content 하나가 페이지 한 장을 의미)
+        - Add slick.css in your <head>
+            slick cdn 검색해서 css를 head에 붙여넣기
+            (min이 붙은 것은 사람이 보기에 가독성은 좋지 않으나 가벼움)
+        - Add slick.js before your closing <body> tag
+            cdn 사이트에서 js를 복사해서 body 아래쪽에 추가
+            
+        - Initialize your slider in your script file or an inline script tag
+            <script></script> 사이에 아래 코드 붙여넣고, 작동할 수 있도록 오류가 나는 문구(설명문)을 지운 뒤 클래스명을 내가 설정한 클래스명과 동일하게 변경, slick으로 설정
+    5. slick class에 내용 집어넣기
+            
+        
+
+
+
+
+    2. slick 검색 후 your content 붙여넣기
+    3. code jquery 검색하여 script위치에 넣기
+    4. slick cdn 검색 후 js, css파일 각 위치에 붙여넣기(style위에)
+    5. slick사이트에서 script코드 붙여넣고 setting~ 삭제, your-class를 내 클래스명으로 변경
+    6. 작동확인
+-->
+<body>
+    <div class="wrap">
+        <div class="banner">
+            <div class="slick">
+            <div class="s1"><!-- s1 -->
+                <div class="left">
+                    <h2>Air<br>
+                    Jordon</h2>
+                    <img src="images/slider-1.png" alt="운동화1">
+                </div>
+                <div class="right">
+
+                </div>
+            </div><!-- s1 -->
+            <div class="s2"><!-- s2 -->
+                <div class="left">
+                    <h2>Air<br>
+                    Jordon</h2>
+                    <img src="images/slider-2.png" alt="운동화2">
+                </div>
+                <div class="right">
+
+                </div>
+            </div><!-- s2 -->
+            <div class="s3"><!-- s3 -->
+                <div class="left">
+                    <h2>Air<br>
+                    Jordon</h2>
+                    <img src="images/slider-3.png" alt="운동화3">
+                </div>
+                <div class="right">
+
+                </div>
+            </div><!-- s3 -->
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script>
+        $(document).ready(function(){
+  $('.slick').slick({
+  
+  });
+});
+		
+    </script>
+</body>
+
+</html>
