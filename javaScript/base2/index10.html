@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="one"></div>
+    <div class="two"></div>
+    <script>
+    let A ="좋은 하루 되세요~";
+    let B ="하루";
+    let C =A.match(B);
+    console.log(C);
+
+        document.querySelector('.one').innerHTML=C[0];
+        // one C의 0번에 하루 입력
+
+    let reg=/(?:https?:\/\/)?(?:www\.)?youtu.be\/([a-zA-Z0-9_-]{11})/;
+    let yrl='https://youtu.be/u_nc-t4oHfw';
+    console.log(yrl.match(reg));
+    let result = yrl.match(reg);
+    document.querySelector('.two').innerHTML=result[1];
+    
+</script>
+</body>
+</html>

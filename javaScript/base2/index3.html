@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>styleChange</title>
+    <style>
+        .container{margin-top: 100px;
+        }
+        .ball {
+            width: 100px;
+            height: 100px;
+            background-color: rgb(166, 245, 166);
+            border-radius: 50%;
+            transition: 0.3s ease-in-out;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <button id="top">top</button>
+        <button id="botton">botton</button>
+        <button id="left">left</button>
+        <button id="right">right</button>
+        <button id="big">big</button>
+        <button id="small">small</button>
+        <div class="ball"></div>
+    </div>
+    <script>
+        window.addEventListener('load',function(){ //윈도우야 이벤트를 들어라, 이미지 등이 로드 되면 펑션 수행
+            var y = 50; //공을 움직이기 위한 변수를 선언
+            var x = 50;
+            var s = 1;
+            var topBtn=document.querySelector('#top');
+            var bottonBtn = document.querySelector('#botton');
+            var leftBtn = document.querySelector('#left');
+            var rightnBtn = document.querySelector('#right');
+            var bignBtn = document.querySelector('#big');
+            var smallnBtn = document.querySelector('#small');
+
+            var ball = document.querySelector('.ball');
+            topBtn.addEventListener('click', function(){
+                y = y-30;
+                ball.style.marginTop = y+"px";
+            });
+            bottonBtn.addEventListener('click', function(){
+                y = y+30;
+                ball.style.marginTop = y+"px";
+            });
+            leftBtn.addEventListener('click', function(){
+                x = x-30;
+                ball.style.marginLeft = x+"px";
+            });
+            rightnBtn.addEventListener('click', function(){
+                x = x+30;
+                ball.style.marginLeft = x+"px";
+            });
+            bignBtn.addEventListener('click', function(){
+                s = s*1.2;
+                ball.style.transform = `scale(${s})`;
+            });
+            smallnBtn.addEventListener('click', function(){
+                s = s/1.2;
+                ball.style.transform = `scale(${s})`;
+            });
+        });
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{margin: 0;padding: 0;}
+        ul, li{list-style: none;}
+        a{text-decoration: none;
+        color: #444;}
+        .controller li{position: relative;}
+        .controller li::after{
+            content: "";
+            position: absolute;
+            left: 0; bottom: 0;
+            width: 100%;
+            height: 4px;
+            background-color: steelblue;
+            transform: scaleX(0);
+            transform-origin: left;
+            
+        }
+        .controller li:hover:after{
+            transform: scaleX(1);
+            transition: 1s;/* 마우스 올릴때만 나타남 */
+        }
+        .controller li a{display: block; width: 60%; background: #ccc;}
+        .controller li.on a{background-color: sandybrown ;}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <ul class="controller">
+            <li class="one on">
+                <a href="#">
+                    <span>첫번째줄입니다.</span>
+                </a>
+            </li><!-- //one -->
+            <li class="two">
+                <a href="#">
+                    <span>두번째줄입니다.</span>
+                </a>
+            </li><!-- //two -->
+            <li class="three">
+                <a href="#">
+                    <span>세번째줄입니다.</span>
+                </a>
+            </li><!-- //three -->
+            <li class="four">
+                <a href="#">
+                    <span>네번째줄입니다.</span>
+                </a>
+            </li><!-- //four -->
+            <li class="five">
+                <a href="#">
+                    <span>다섯번째줄입니다.</span>
+                </a>
+            </li><!-- //five -->
+            <li class="six">
+                <a href="#">
+                    <span>여섯번째줄입니다.</span>
+                </a>
+            </li><!-- //six -->
+        </ul>
+    </div>
+    <script>
+        window.addEventListener('load',function(){
+            // var list = document.querySelector('.controller li');    // 첫번째 li만 불러옴
+            var list = document.querySelectorAll('.controller li');
+            for(var i=0; i<list.length; i++){
+                list[i].addEventListener('click',function(e){
+                    e.preventDefult;
+                    // console.log("target:"+e.target);
+                    // e.target.classList.add("on");
+                    // console.log("currentTarget:"+e.currentTarget);
+                    for(var i=0; i<list.length; i++){
+                        list[i].classList.remove('on');
+                    } 
+                    e.currentTarget.classList.add("on");
+                })
+                }
+        })
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+//1번
+var star = '';
+for(var i=0; i<10; i++){
+    star = (star+'*');
+    document.write(star+"<br>")
+}    document.write("<br><br><br>")
+//2번
+star = '*'; stick = '-';
+var num = 10; var num2 = 0;
+
+for(var i=0; i<10; i++){
+    // 10줄 될 때 까지 반복
+
+    for(var j=0; j<num; j++){
+    document.write(stick); 
+    }
+    //- 를 num만큼 출력하고 num 감소
+
+    for(var j=num; j<10; j++){
+    document.write(star)
+    }
+    for(var j=num+1; j<10; j++){
+    document.write(star)
+    }   num2++;
+    for(var j=0; j<num; j++){
+    document.write(stick); 
+    }
+    num--;
+    // *를 num2만큼 출력하고 num2증가
+document.write("<br>")
+}
+    </script>
+<script>
+            document.write('<br>');
+
+    var output="";
+    for(var i=0; i<=15; i++){
+        for(var j=0; j<i; j++){
+            output += '*';//output = output + '*';
+
+        }
+        document.write(output);
+        //i=0
+        //i=1   *
+        //i=2   * **        //input = ""으로 변경하여 초기화
+        document.write('<br>');
+        output="";
+        //i=0
+        //i=1   *
+        // i=2   ** 
+    }
+        var output="";
+        for(var i=0; i<5; i++){
+            for(var j=5; j>i; j--){
+                output += '&nbsp;';  //output=output + '-'  //'&nbsp;'< 한 칸 띄우기
+            }
+            for(var k=0; k< 2*i -1; k++){
+                output += '*';  //output=output + '*'
+            }
+            //i=0 -----
+            //i=1 ----
+            //i=2 ---
+            //i=3 --
+            //i=4 -
+            document.write(output);
+            document.write('<br>');
+            output="";
+        }
+    
+</script>   
+</body>
+</html>

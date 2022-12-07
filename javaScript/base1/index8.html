@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>DOM 요소</title>
+    <style>
+
+
+    </style>
+</head>
+<body>
+    <h1 id="title">제목입니다.</h1>
+    <ul>
+        <li>어서오세요</li>
+        <li>그린컴퓨터학원</li>
+    </ul>
+    <button id="click">눌러주세요</button>
+    <script>
+        var title=document.getElementById("title"); //도큐먼트에서 아이디를 가져와라
+        var button=document.getElementById("click");
+        // button.addEventListener("click",function(){
+        //     title.textContent="딴따라라 제목~!!!!"
+
+        //     if(title.textContent="딴따라라 제목~!!!!"){
+        //         button.addEventListener("click",function(){
+        //         title.textContent="제목입니다."})
+        //     }
+
+        // });
+        button.addEventListener("click",function e(){
+        if(title.textContent="제목입니다."){
+            button.addEventListener("click",function(){
+            title.textContent="딴따라라 제목~!!!!"
+        })};
+        if(title.textContent="딴따라라 제목~!!!!"){
+            button.addEventListener("click",function(){
+            title.textContent="제목입니다."})
+        };
+    });
+    button.addEventListener("click",function(){
+        e()
+    })
+    
+    </script>
+</body>
+</html>

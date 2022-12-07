@@ -1,0 +1,51 @@
+@charset "UTF-8";
+*{margin: 0; padding: 0;}
+li{list-style: none;}
+a{text-decoration: none;}
+
+#nav{
+    position: fixed;
+    left: 0; top: 0; right: 0;
+    background-color: rgba(255, 255, 255, 0.3);
+    z-index: 100;
+}
+#nav h1{float: left; font-size: 40px; color: white;
+    /* 패딩 앞에 공간 띄우기 */
+padding-left: 20px;}
+#nav ul{float: right;
+padding-top: 10px;}
+#nav ul li{float: left;
+padding: 5px 5px 5px 15px;}/* 1~6순서 떄문에 써줘야함 */
+#nav ul li a{left: 30px;
+color: white; text-transform: uppercase;}
+/* text-teansform: capetal < 첫글자만 대문자 */
+
+/* 인터넷에 기능이 안돌아가서 못 씀 */
+html{scroll-behavior: smooth;}
+
+
+
+
+
+
+#contents{}
+#contents>div{ height: 100vh;
+}
+/* 패딩의 %기준은 부모의 넓이, 여기선 div */
+#contents>div h2{padding-top: 30%;
+/* padding: 10%; */ font-size: 50px;
+text-align: center; color: white;
+ }
+/* div에서 id가 section# 인 것 */
+#contents>div#section1{background: linear-gradient(to right, #5D26C1, #a17fe0, #59C173);
+}
+#contents>div#section2{background: linear-gradient(to right, #fdbb2d, #22c1c3);
+    }
+#contents>div#section3{background: linear-gradient(to right, #EC6EAD, #3494E6);
+    }
+#contents>div#section4{background: linear-gradient(to right, #00dbde, #fc00ff); 
+    }
+#contents>div#section5{background: linear-gradient(to right, #ffc500, #c21500);
+    }
+#contents>div#section6{background: linear-gradient(to right, #E684AE, #79CBCA, #77A1D3);
+    }

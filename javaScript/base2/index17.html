@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //화살표함수 =>
+        // 이름없는함수();     //변수에 넣은 펑션문은 위에서 부르는 것으로 실행 불가능함
+        // var 이름없는함수 = function(){
+        //     console.log("화살표함수 실행");
+        // }
+        // 이름없는함수();
+
+        //화살표함수
+        var 이름없는함수 = 
+        ()=>{console.log("화살표함수 실행")}
+
+        이름없는함수(); //위와 동일한 기능
+
+
+        // var 기본함수 = function (str){
+        //     return str;
+        // }
+        //화살표함수
+        //매개변수가 하나일때
+        var 기본함수 = (str) => {
+            return str;}
+        //매개변수가 '하나일 때'는 괄호 생략 가능
+        var 기본함수 = str => {return str;}
+        //화살표 함수일 땐 리턴 중괄호 생략가능
+        var 기본함수 = str => str;
+
+
+        var value = 기본함수("글자입니다.")
+        document.write(value)
+
+
+
+
+
+
+        이름();
+        function 이름(){    //이름있는 함수는 위에서 불러도 실행이 가능함, 호이스팅 되었기 때문 변수선언 펑션과 저장공간 다름
+            console.log("이름있는함수 실행");
+        }
+        
+    </script>
+    
+</body>
+</html>
